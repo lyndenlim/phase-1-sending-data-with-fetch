@@ -9,6 +9,16 @@
   </head>
 
   <body>
+    <h1>Sample Form</h1>
+    <form action="http://localhost:3000/dogs" method="POST">
+      <label> Dog Name: <input type="text" name="dogName" id="dogName" /></label><br />
+      <label> Dog Breed: <input type="text" name="dogBreed" id="dogBreed" /></label><br />
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+    <div>
+      ID of submitted dog: <span id="dogID"></span>
+      <h1>Error Message: <span id="errorMessage"></span></h1>
+    </div>
     <script src="index.js"></script>
   </body>
 
